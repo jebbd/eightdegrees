@@ -15,7 +15,7 @@ library(patchwork)
 ## Eight Degrees Brewing
 [Eight Degrees Brewing](https://www.eightdegrees.ie/) are an Irish brewery in Cork. I was inspired by the colour palette of their limited edition, Munro series.  
     
-This is primarily an opportunity to create a colour palettes and learn some R package development.
+This is primarily an opportunity to create a colour palettes and learn some R package development. Both scale_colour_* and scale_fill_* functions are included.
 
 ### Munro Series
 8 colour paried paletted based on the limited edition Munro series

@@ -8,7 +8,8 @@ brewery in Cork. I was inspired by the colour palette of their limited
 edition, Munro series.
 
 This is primarily an opportunity to create a colour palettes and learn
-some R package development.
+some R package development. Both scale\_colour\_\* and scale\_fill\_\*
+functions are included.
 
 ### Munro Series
 
