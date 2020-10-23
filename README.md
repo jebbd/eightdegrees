@@ -25,10 +25,11 @@ tibble(
     ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
       scale_fill_munro(guide=NULL)+theme_ridges()+labs(y="",x="")->p2
 
-p1+p2
+p1+p2-> ppp
+ggsave("pngs/munro.png",plot=ppp,height=3,width=7)
 ```
 
-<img src="README_files/figure-gfm/unnamed-chunk-1-1.png" width="90%" style="display: block; margin: auto;" />
+![munro palette](pngs/munro.png)
 
 ### Core Range
 
@@ -45,13 +46,14 @@ tibble(
     ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
       scale_fill_core_range(guide=NULL)+theme_ridges()+labs(y="",x="")->p4
 
-p3+p4
+p3+p4 -> pp
+ggsave("pngs/core_range.png",plot=pp,height=3,width=7)
 ```
 
-<img src="README_files/figure-gfm/unnamed-chunk-2-1.png" width="90%" style="display: block; margin: auto;" />
+![core range palette](pngs/core_range.png)
 
 -----
 
 **Unfortunately these palettes are not colourblind safe**
 
-<img src="README_files/figure-gfm/unnamed-chunk-3-1.png" width="90%" style="display: block; margin: auto;" />
+![colorblind grid](pngs/colorblind_grid.png)
