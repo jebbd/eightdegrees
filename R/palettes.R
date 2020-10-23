@@ -7,12 +7,12 @@
 #' @rdname Palettes
 #' @export
 CoreRange<-c(
-  `Howling Gale` = "#25ABE0",
-  `Amber Ella` = "#F26122",
-  `Knockmealdown`= "#519D44",
-  `Sunburnt Red` = "#E31836",
-  `Hurricaine` = "#A1D2CA",
-  `Barefoot Bohemian` = "#FCB040"
+  `Howling Gale` = "#4097C1",
+  `Amber Ella` = "#CE5E3C",
+  `Knockmealdown`= "#538A4B",
+  `Sunburnt Red` = "#BD3440",
+  `Hurricaine` = "#96B9B3",
+  `Barefoot Bohemian` = "#DF9D42"
 )
 #' @rdname Palettes
 #' @export
@@ -26,3 +26,12 @@ Munro<-c(
   `Missing Red Value` = "#C61435",
   `Missing Black Value` = "#333534"
 )
+
+#BrightCoreRange<-c(
+#  `Howling Gale` = "#25ABE0",
+#  `Amber Ella` = "#F26122",
+#  `Knockmealdown`= "#519D44",
+#  `Sunburnt Red` = "#E31836",
+#  `Hurricaine` = "#A1D2CA",
+#  `Barefoot Bohemian` = "#FCB040"
+#)
