@@ -7,13 +7,13 @@ README
 brewery in Cork. I was inspired by the colour palette of their limited
 edition, Munro series.
 
-This is primarily an opportunity to create a colour palettes and learn
+This is primarily an opportunity to create colour palettes and learn
 some R package development. Both scale\_colour\_\* and scale\_fill\_\*
 functions are included.
 
 ### Munro Series
 
-8 colour paried paletted based on the limited edition Munro series
+8 colour paired palettes based on the limited edition Munro series
 
 ``` r
 colorblindr::gg_color_swatches(8)+scale_fill_munro()->p1

@@ -1,8 +1,8 @@
 #' 8 Degrees Palettes
 #' @description
-#' CoreRange: 6 colour palette based on the core range from 8 degrees brewing
+#' CoreRange: 6 colour palette based on the \href{https://www.eightdegrees.ie/our-beers/}{core range} from 8 degrees brewing
 #'
-#' Munro: 8 colour paried paletted based on the limited edition Munro series
+#' Munro: 8 colour paried paletted based on the limited edition \href{https://www.eightdegrees.ie/tag/irish-munro-series/}{Munro series}
 #'
 #' @rdname Palettes
 #' @export
