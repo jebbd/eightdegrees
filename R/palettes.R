@@ -23,8 +23,8 @@ Munro<-c(
   `Missing Pink Value` = "#DF93A8",
   `Fort of the Fianna` = "#DC6F14",
   `Missing Yellow Value` = "#E3A428",
-  `Missing Red Value` = "#C61435",
-  `Missing Black Value` = "#333534"
+  `Devil's Ladder` = "#C61435",
+  `The Black Road` = "#333534"
 )
 
 #BrightCoreRange<-c(
