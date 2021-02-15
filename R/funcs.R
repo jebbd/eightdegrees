@@ -17,5 +17,9 @@ munro_pal<- function(n) {
     warning("Insufficient values in manual scale. ", n, " needed but only ",
             length(Munro), " provided.", call. = FALSE)
   }
-  unname(Munro[1:n])
+  if (n==2){
+    Munro[c("Glen of Imaal","Fort of na Fianna")]%>%unname%>%return()
+  }else{
+    unname(Munro[1:n])
+  }
 }

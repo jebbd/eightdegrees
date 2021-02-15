@@ -21,7 +21,7 @@ Munro<-c(
   `Glen of Imaal` = "#6F92B2",
   `The Pilgrims Path` = "#9E3776",
   `Missing Pink Value` = "#DF93A8",
-  `Fort of the Fianna` = "#DC6F14",
+  `Fort of na Fianna` = "#DC6F14",
   `Missing Yellow Value` = "#E3A428",
   `Devil's Ladder` = "#C61435",
   `The Black Road` = "#333534"

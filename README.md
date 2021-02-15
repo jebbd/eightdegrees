@@ -1,15 +1,17 @@
 README
 ================
 
+<img style="float: right;" src="pngs/hex_sticker.png" width=200 height=200>
+
 ## Eight Degrees Brewing
 
 [Eight Degrees Brewing](https://www.eightdegrees.ie/) are an Irish
 brewery in Cork. I was inspired by the colour palette of their limited
 edition, Munro series.
 
-This is primarily an opportunity to create colour palettes and learn
-some R package development. Both scale\_colour\_\* and scale\_fill\_\*
-functions are included.
+Both scale\_colour\_\* and scale\_fill\_\* functions are included. The
+structure of this package is heavily inspired by the
+[{colorblindr}](https://github.com/clauswilke/colorblindr) 📦.
 
 ### Munro Series
 
@@ -53,8 +55,10 @@ ggsave("pngs/core_range.png",plot=pp,height=3,width=7)
 
 ![core range palette](pngs/core_range.png)
 
------
+------------------------------------------------------------------------
 
-**Unfortunately these palettes are not colourblind safe**
+**Unfortunately these palettes are not colourblind safe**<br> But if you
+request two colours from either palette the returned pair is a
+colourblind safe blue and orange.
 
 ![colorblind grid](pngs/colorblind_grid.png)
