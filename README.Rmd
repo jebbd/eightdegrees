@@ -18,6 +18,11 @@ library(patchwork)
     
 Both scale_colour_* and scale_fill_* functions are included. The structure of this package is heavily inspired by the [{colorblindr}](https://github.com/clauswilke/colorblindr) `r emo::ji("package")`. 
 
+```{r eval=FALSE}
+install.packages("remotes")
+remotes::install_github("jebbd/eightdegrees")
+```
+
 ### Munro Series
 8 colour paired palettes based on the limited edition Munro series
 ```{r eval=FALSE}

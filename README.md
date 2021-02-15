@@ -13,6 +13,11 @@ Both scale\_colour\_\* and scale\_fill\_\* functions are included. The
 structure of this package is heavily inspired by the
 [{colorblindr}](https://github.com/clauswilke/colorblindr) 📦.
 
+``` r
+install.packages("remotes")
+remotes::install_github("jebbd/eightdegrees")
+```
+
 ### Munro Series
 
 8 colour paired palettes based on the limited edition Munro series
