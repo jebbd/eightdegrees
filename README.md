@@ -1,7 +1,7 @@
 README
 ================
 
-<img style="float: right;" src="pngs/hex_sticker.png" width=200 height=200>
+<img align="right" src="pngs/hex_sticker.png" width=150 height=150>
 
 ## Eight Degrees Brewing
 
@@ -18,7 +18,7 @@ structure of this package is heavily inspired by the
 8 colour paired palettes based on the limited edition Munro series
 
 ``` r
-colorblindr::gg_color_swatches(8)+scale_fill_munro()->p1
+colorblindr::gg_color_swatches(8)+scale_fill_munro()
 
 tibble(
   a=rnorm(100),b=rnorm(100,mean=1),c=rnorm(100,mean=2),d=rnorm(100,mean=3),
@@ -26,10 +26,7 @@ tibble(
   )%>%
     pivot_longer(everything(),names_to="letters",values_to="values")%>%
     ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
-      scale_fill_munro(guide=NULL)+theme_ridges()+labs(y="",x="")->p2
-
-p1+p2-> ppp
-ggsave("pngs/munro.png",plot=ppp,height=3,width=7)
+      scale_fill_munro(guide=NULL)+theme_ridges()+labs(y="",x="")
 ```
 
 ![munro palette](pngs/munro.png)
@@ -39,7 +36,7 @@ ggsave("pngs/munro.png",plot=ppp,height=3,width=7)
 6 colour palette based on the core range from 8 degrees brewing
 
 ``` r
-colorblindr::gg_color_swatches(6)+scale_fill_core_range()->p3
+colorblindr::gg_color_swatches(6)+scale_fill_core_range()
 
 tibble(
   a=rnorm(100),b=rnorm(100,mean=1),c=rnorm(100,mean=2),
@@ -47,10 +44,7 @@ tibble(
   )%>%
     pivot_longer(everything(),names_to="letters",values_to="values")%>%
     ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
-      scale_fill_core_range(guide=NULL)+theme_ridges()+labs(y="",x="")->p4
-
-p3+p4 -> pp
-ggsave("pngs/core_range.png",plot=pp,height=3,width=7)
+      scale_fill_core_range(guide=NULL)+theme_ridges()+labs(y="",x="")
 ```
 
 ![core range palette](pngs/core_range.png)
