@@ -1,7 +1,12 @@
 README
 ================
 
-<img align="right" src="pngs/hex_sticker.png" width=150 height=150>
+<!-- badges: start -->
+
+[![R build
+status](https://github.com/jebbd/eightdegrees/workflows/R-CMD-check/badge.svg)](https://github.com/jebbd/eightdegrees/actions)
+<!-- badges: end -->
+<img align="right" src="inst/pngs/hex_sticker.png" width=150 height=150>
 
 ## Eight Degrees Brewing
 
@@ -34,7 +39,7 @@ tibble(
       scale_fill_munro(guide=NULL)+theme_ridges()+labs(y="",x="")
 ```
 
-![munro palette](pngs/munro.png)
+![munro palette](inst/pngs/munro.png)
 
 ### Core Range
 
@@ -52,7 +57,7 @@ tibble(
       scale_fill_core_range(guide=NULL)+theme_ridges()+labs(y="",x="")
 ```
 
-![core range palette](pngs/core_range.png)
+![core range palette](inst/pngs/core_range.png)
 
 ------------------------------------------------------------------------
 
@@ -60,4 +65,4 @@ tibble(
 request two colours from either palette the returned pair is a
 colourblind safe blue and orange.
 
-![colorblind grid](pngs/colorblind_grid.png)
+![colorblind grid](inst/pngs/colorblind_grid.png)

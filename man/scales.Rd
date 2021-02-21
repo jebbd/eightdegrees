@@ -21,6 +21,9 @@ scale_colour_munro(...)
 
 scale_color_munro(...)
 }
+\arguments{
+\item{...}{see ggplot2 documentation}
+}
 \description{
 scale_fill_* and scale_colour_* functions
 }

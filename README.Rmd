@@ -11,7 +11,10 @@ library(ggridges)
 library(eightdegrees)
 library(patchwork)
 ```
-<img align="right" src="pngs/hex_sticker.png" width=150 height=150>
+<!-- badges: start -->
+[![R build status](https://github.com/jebbd/eightdegrees/workflows/R-CMD-check/badge.svg)](https://github.com/jebbd/eightdegrees/actions)
+<!-- badges: end -->
+<img align="right" src="inst/pngs/hex_sticker.png" width=150 height=150>
 
 ## Eight Degrees Brewing
 [Eight Degrees Brewing](https://www.eightdegrees.ie/) are an Irish brewery in Cork. I was inspired by the colour palette of their limited edition, Munro series.  
@@ -37,7 +40,7 @@ tibble(
       scale_fill_munro(guide=NULL)+theme_ridges()+labs(y="",x="")
 
 ```
-![munro palette](pngs/munro.png)
+![munro palette](inst/pngs/munro.png)
 
 ### Core Range
 6 colour palette based on the core range from 8 degrees brewing
@@ -53,11 +56,11 @@ tibble(
       scale_fill_core_range(guide=NULL)+theme_ridges()+labs(y="",x="")
 
 ```
-![core range palette](pngs/core_range.png)
+![core range palette](inst/pngs/core_range.png)
   
 *********
   
 **Unfortunately these palettes are not colourblind safe**<br>
 But if you request two colours from either palette the returned pair is a colourblind safe blue and orange. 
   
-![colorblind grid](pngs/colorblind_grid.png)
+![colorblind grid](inst/pngs/colorblind_grid.png)

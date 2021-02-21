@@ -4,8 +4,10 @@ Title: Eight Degrees Colour Palettes
 Version: 0.3.0
 Author: David Jebb
 Maintainer: David Jebb <jebbd@tcd.ie>
-Description: Colour paletttes for {ggplot2} based on the core range and the Munro series from Eight Degrees Brewey
+Description: Colour paletttes for {ggplot2} based on the core range and the Munro series from Eight Degrees Brewery.
 License: CC0
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Imports: 
+    ggplot2

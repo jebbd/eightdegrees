@@ -18,8 +18,8 @@ munro_pal<- function(n) {
             length(Munro), " provided.", call. = FALSE)
   }
   if (n==2){
-    Munro[c("Glen of Imaal","Fort of na Fianna")]%>%unname%>%return()
+    return(unname(Munro[c("Glen of Imaal","Fort of na Fianna")]))
   }else{
-    unname(Munro[1:n])
+    return(unname(Munro[1:n]))
   }
 }
