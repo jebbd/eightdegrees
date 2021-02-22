@@ -1,7 +1,7 @@
 Package: eightdegrees
 Type: Package
 Title: Eight Degrees Colour Palettes
-Version: 0.3.0
+Version: 0.3.1
 Author: David Jebb
 Maintainer: David Jebb <jebbd@tcd.ie>
 Description: Colour paletttes for {ggplot2} based on the core range and the Munro series from Eight Degrees Brewery.

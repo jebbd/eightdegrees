@@ -5,7 +5,9 @@
 #' @param n number of colours to return
 #' @rdname functions
 core_range_pal <- function(n) {
-  if (n > length(CoreRange)) {
+  if(n<1){
+    stop("n must be greater than 0")
+  }else if (n > length(CoreRange)) {
     warning("Insufficient values in manual scale. ", n, " needed but only ",
             length(CoreRange), " provided.", call. = FALSE)
   }
@@ -13,10 +15,13 @@ core_range_pal <- function(n) {
 }
 #' @rdname functions
 munro_pal<- function(n) {
-  if (n > length(Munro)) {
+  if(n<1){
+    stop("n must be greater than 0")
+  }else if (n > length(Munro)) {
     warning("Insufficient values in manual scale. ", n, " needed but only ",
             length(Munro), " provided.", call. = FALSE)
   }
+
   if (n==2){
     return(unname(Munro[c("Glen of Imaal","Fort of na Fianna")]))
   }else{
