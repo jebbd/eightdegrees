@@ -16,8 +16,5 @@ Suggests:
     knitr,
     rmarkdown,
     dplyr,
-    tidyr,
-    patchwork,
-    colorblindr,
-    ggridges
+    colorBlindness
 VignetteBuilder: knitr

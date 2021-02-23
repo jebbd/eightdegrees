@@ -21,46 +21,44 @@ remotes::install_github("jebbd/eightdegrees",build_vignettes = TRUE)
 ```
 ```{r setup, warning=FALSE,message=FALSE}
 library(eightdegrees)
+library(ggplot2)
+library(colorBlindness)
 library(dplyr)
-library(tidyr)
-library(patchwork)
-library(colorblindr)
-library(ggridges)
 ```
 ### Munro Series
 
 8 colour paired palette based on the limited edition Munro series
+```{r echo=FALSE,fig.width=7,fig.height=4}
+tibble(x=letters[1:8],y=rep(1,8))%>%
+        ggplot(aes(x=x,y=y,fill=x))+geom_col()+
+        scale_fill_munro(guide=NULL)+
+        theme_void()
+```
 
-```{r, fig.width=7}
-p1<-gg_color_swatches(8)+scale_fill_munro()
-
-p2<-tibble(
-  a=rnorm(100),b=rnorm(100,mean=1),c=rnorm(100,mean=2),d=rnorm(100,mean=3),
-  e=rnorm(100),f=rnorm(100,mean=-1),g=rnorm(100,mean=-2),h=rnorm(100,mean=-3)
-  )%>%
-    pivot_longer(everything(),names_to="letters",values_to="values")%>%
-    ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
-      scale_fill_munro(guide=NULL)+theme_ridges()+labs(y="",x="")
-      
-p1+p2
+```{r, fig.width=7,fig.height=5}
+ggplot(iris,aes(x=Sepal.Width,y=Sepal.Length,colour=Species))+
+  geom_point(size=2)+
+  scale_colour_munro()+
+  theme_minimal()
 ```
 
 ### Core Range
 
 6 colour palette based on the core range from 8 degrees brewing
 
-``` {r fig.width=7}
-p3<-gg_color_swatches(6)+scale_fill_core_range()
+```{r echo=FALSE,fig.width=7,fig.height=4}
+swatch<-tibble(x=letters[1:6],y=rep(1,6))%>%
+        ggplot(aes(x=x,y=y,fill=x))+geom_col()+
+        scale_fill_core_range(guide=NULL)+
+        theme_void()
+swatch
+```
 
-p4<-tibble(
-  a=rnorm(100),b=rnorm(100,mean=1),c=rnorm(100,mean=2),
-  d=rnorm(100),e=rnorm(100,mean=-1),f=rnorm(100,mean=-2)
-  )%>%
-    pivot_longer(everything(),names_to="letters",values_to="values")%>%
-    ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
-      scale_fill_core_range(guide=NULL)+theme_ridges()+labs(y="",x="")
-      
-p3+p4
+``` {r fig.width=7,fig.height=5}
+ggplot(iris,aes(x=Species,y=Sepal.Width,fill=Species))+
+  geom_violin()+
+  scale_fill_core_range()+
+  theme_minimal()
 ```
 
 ------------------------------------------------------------------------
@@ -70,5 +68,6 @@ But if you request two colours from either palette the returned pair is a
 colourblind safe blue and orange.
 
 ```{r fig.width=7,fig.height=7}
-cvd_grid(p2)
+cvdPlot(swatch,layout = c("origin", "deuteranope", 
+                     "protanope","desaturate"))
 ```
