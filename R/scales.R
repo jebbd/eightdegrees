@@ -1,5 +1,6 @@
 #' Scale functions to use with GGPlot2
 #'
+#' @example inst/examples/examples.R
 #' @description
 #' scale_fill_* and scale_colour_* functions
 #' @param ... see ggplot2 \href{documentation}{https://ggplot2.tidyverse.org/reference/discrete_scale.html}

@@ -6,7 +6,7 @@ README
 [![R build
 status](https://github.com/jebbd/eightdegrees/workflows/R-CMD-check/badge.svg)](https://github.com/jebbd/eightdegrees/actions)
 [![GitHub
-version](https://img.shields.io/badge/version-0.3.1-success)](https://github.com/Naereen/StrapDown.js)
+version](https://img.shields.io/badge/version-0.3.1-success)](https://github.com/jebbd/eightdegrees/)
 [![CC-0
 license](https://img.shields.io/badge/License-CC--0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0)
 <!-- badges: end -->
