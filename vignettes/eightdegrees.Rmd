@@ -1,0 +1,74 @@
+---
+title: "eightdegrees"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{eightdegrees}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+## Installation
+
+``` {r,eval=FALSE}
+install.packages("remotes")
+remotes::install_github("jebbd/eightdegrees",build_vignettes = TRUE)
+```
+```{r setup, warning=FALSE,message=FALSE}
+library(eightdegrees)
+library(dplyr)
+library(tidyr)
+library(patchwork)
+library(colorblindr)
+library(ggridges)
+```
+### Munro Series
+
+8 colour paired palette based on the limited edition Munro series
+
+```{r, fig.width=7}
+p1<-gg_color_swatches(8)+scale_fill_munro()
+
+p2<-tibble(
+  a=rnorm(100),b=rnorm(100,mean=1),c=rnorm(100,mean=2),d=rnorm(100,mean=3),
+  e=rnorm(100),f=rnorm(100,mean=-1),g=rnorm(100,mean=-2),h=rnorm(100,mean=-3)
+  )%>%
+    pivot_longer(everything(),names_to="letters",values_to="values")%>%
+    ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
+      scale_fill_munro(guide=NULL)+theme_ridges()+labs(y="",x="")
+      
+p1+p2
+```
+
+### Core Range
+
+6 colour palette based on the core range from 8 degrees brewing
+
+``` {r fig.width=7}
+p3<-gg_color_swatches(6)+scale_fill_core_range()
+
+p4<-tibble(
+  a=rnorm(100),b=rnorm(100,mean=1),c=rnorm(100,mean=2),
+  d=rnorm(100),e=rnorm(100,mean=-1),f=rnorm(100,mean=-2)
+  )%>%
+    pivot_longer(everything(),names_to="letters",values_to="values")%>%
+    ggplot(aes(x=values,y=letters,fill=letters))+geom_density_ridges2()+
+      scale_fill_core_range(guide=NULL)+theme_ridges()+labs(y="",x="")
+      
+p3+p4
+```
+
+------------------------------------------------------------------------
+
+**Unfortunately these palettes are not colourblind safe**<br> 
+But if you request two colours from either palette the returned pair is a
+colourblind safe blue and orange.
+
+```{r fig.width=7,fig.height=7}
+cvd_grid(p2)
+```

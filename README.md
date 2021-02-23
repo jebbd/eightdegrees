@@ -9,6 +9,8 @@ status](https://github.com/jebbd/eightdegrees/workflows/R-CMD-check/badge.svg)](
 version](https://img.shields.io/badge/version-0.3.1-success)](https://github.com/jebbd/eightdegrees/)
 [![CC-0
 license](https://img.shields.io/badge/License-CC--0-blue.svg)](https://creativecommons.org/licenses/by-nd/4.0)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 <!-- badges: end -->
 <img align="right" src="inst/pngs/hex_sticker.png" width=150 height=150>
 
