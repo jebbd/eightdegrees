@@ -1,7 +1,5 @@
-eigthdegrees
-================
 
-# <img src="https://raw.githubusercontent.com/jebbd/eightdegrees/master/inst/pngs/hex_sticker.png" align="right" height=150/>
+# eightdegrees <img src="https://raw.githubusercontent.com/jebbd/eightdegrees/master/inst/pngs/hex_sticker.png" align="right" height=150/>
 
 <!-- badges: start -->
 
@@ -15,14 +13,16 @@ license](https://img.shields.io/badge/License-CC--0-blue.svg)](https://creativec
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
 <!-- badges: end -->
 
-## Eight Degrees Brewing
+The {eightdegrees} 📦 offers two colour palettes for use with the
+{ggplot2} package.
 
-[Eight Degrees Brewing](https://www.eightdegrees.ie/) are an Irish
-brewery in Cork. I was inspired by the colour palette of their limited
-edition, Munro series.
+I was inspired by the colour palette of the limited edition, Munro
+series from [Eight Degrees Brewing](https://www.eightdegrees.ie/), an
+Irish brewery in Cork.
 
-Both scale\_colour\_\* and scale\_fill\_\* functions are included. The
-structure of this package is heavily inspired by the
+Both scale\_colour\_\* and scale\_fill\_\* functions are included.
+
+The structure of this package is heavily inspired by the
 [{colorblindr}](https://github.com/clauswilke/colorblindr) 📦.
 
 <font size="2"> **Disclaimer**<br> I am in no way affiliated with Eight
